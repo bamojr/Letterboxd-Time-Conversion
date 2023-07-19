@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Letterboxd Time Convertion",
+  "version": "1.0",
+
+  "description": "Adds hours and minutes on Letterboxd film pages",
+
+  "icons": {
+    "48": "icons/clock-time-four-outline.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.letterboxd.com/film/*"],
+      "js": ["letterboxd_time_conversion.js"]
+    }
+  ]
+}
